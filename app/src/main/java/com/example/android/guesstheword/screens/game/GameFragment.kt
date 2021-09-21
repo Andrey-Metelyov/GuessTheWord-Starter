@@ -55,6 +55,8 @@ class GameFragment : Fragment() {
             false
         )
 
+        binding.gameViewModel = viewModel
+
         viewModel.score.observe(viewLifecycleOwner, { newScore ->
             binding.scoreText.text = newScore.toString()
         })
@@ -67,26 +69,7 @@ class GameFragment : Fragment() {
             if (hasFinished) gameFinished()
         })
 
-        binding.correctButton.setOnClickListener { onCorrect() }
-        binding.skipButton.setOnClickListener { onSkip() }
-        binding.endGameButton.setOnClickListener { onEndGame() }
-
         return binding.root
-    }
-
-
-    /** Methods for buttons presses **/
-
-    private fun onSkip() {
-        viewModel.onSkip()
-    }
-
-    private fun onCorrect() {
-        viewModel.onCorrect()
-    }
-
-    private fun onEndGame() {
-        gameFinished()
     }
 
     private fun gameFinished() {

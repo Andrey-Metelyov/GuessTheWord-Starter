@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/android-kotlin-fundamentals-starter-apps-master/GuessTheWord-Starter/app/src/main/res/layout/game_fragment.xml" value="0.31979166666666664" />
         <entry key="..\:/Projects/android-kotlin-fundamentals-starter-apps-master/GuessTheWord-Starter/app/src/main/res/layout/main_activity.xml" value="0.31979166666666664" />
         <entry key="..\:/Projects/android-kotlin-fundamentals-starter-apps-master/GuessTheWord-Starter/app/src/main/res/layout/score_fragment.xml" value="0.31979166666666664" />
       </map>
