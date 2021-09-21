@@ -89,6 +89,10 @@ class GameViewModel : ViewModel() {
         _eventGameFinished.value = true
     }
 
+    fun onGameFinishComplete() {
+        _eventGameFinished.value = false
+    }
+
     override fun onCleared() {
         super.onCleared()
         Log.i(TAG, "GameViewModel destroyed!")
